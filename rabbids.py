@@ -14,6 +14,9 @@ def rabbids (meses):
 ## sumamos a y b (1+1 inicalmente) y sustituimos a por b y b por res
 ## de manera que tenemos siempre a y b como los dos ultimos resultados.
 	else:
+## el range debería comenzar en 3 porque el valor 1 y el 2 ya los 
+## conozco, lo hago empezar en 2 porque el ultimo valor de un range
+## no se incluye, es decir sería lo mismo que poner in range (3,meses+1)
 		for n in range (2, meses):
 			res = a + b
 			a = b
