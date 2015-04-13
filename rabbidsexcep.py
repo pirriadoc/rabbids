@@ -12,9 +12,12 @@ def rabbids (meses):
 	correcto = False
 	while not correcto:
 		try:
-			if meses >0:
+			if meses >=0:
+				if meses = 0:
+					res = 0
+					correcto = True
 ## si es 1 o 2 meses hay una pareja
-				if meses <= 2:
+				elif meses <= 2:
 					res = 1
 					correcto = True
 ## si es mas de 2 meses el res será el de la suma de los dos res anteriores
